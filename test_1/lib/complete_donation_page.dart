@@ -6,8 +6,14 @@ class CompleteDonationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF181E1E),
       appBar: AppBar(
-        title: Text('Complete Donation'),
+        title: Text(
+          'Back',
+          style: TextStyle(color: Color.fromARGB(255, 238, 238, 238)),
+        ),
+        backgroundColor: Color(0xFF181E1E),
+        iconTheme: IconThemeData(color: Color.fromARGB(255, 238, 238, 238)), // Set the icon color here
       ),
       body: Column(
         mainAxisSize: MainAxisSize.max,
@@ -30,7 +36,7 @@ class CompleteDonationPage extends StatelessWidget {
                 maxHeight: MediaQuery.of(context).size.height * 0.84,
               ),
               decoration: BoxDecoration(
-                color: Colors.grey[200], // Use your FlutterFlowTheme color here
+                color: Color(0xFF181E1E), // Set the background color to match the image color
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(16),
                   bottomRight: Radius.circular(16),
@@ -48,24 +54,23 @@ class CompleteDonationPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Complete donation',
+                          'Complete Donation',
                           style: TextStyle(
                             fontFamily: 'Sora',
                             fontSize: 34,
+                            color: Color.fromARGB(255, 238, 238, 238),
                           ),
                         ),
                         Card(
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: Colors.grey[
-                              200], // Use your FlutterFlowTheme color here
+                          color: Color(0xFF181E1E), // Set the card color to match the image color
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
                           child: IconButton(
                             icon: Icon(
                               Icons.close_rounded,
-                              color: Colors
-                                  .grey, // Use your FlutterFlowTheme color here
+                              color: Color.fromARGB(255, 238, 238, 238), // Set the icon color to white
                               size: 25,
                             ),
                             onPressed: () {
@@ -99,34 +104,30 @@ class CompleteDonationPage extends StatelessWidget {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(20, 12, 20, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(20, 12, 20, 0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    'Balance',
+                                    'Donation Size',
                                     style: TextStyle(
                                       fontFamily: 'Inter',
-                                      color: Colors
-                                          .black, // Use your FlutterFlowTheme color here
+                                      color: Color.fromARGB(255, 238, 238, 238), // Set text color to white
                                     ),
                                   ),
                                 ],
                               ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(20, 4, 20, 0),
+                              padding: EdgeInsetsDirectional.fromSTEB(20, 4, 20, 0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    '\$7,630',
+                                    '1.00 Eth',
                                     style: TextStyle(
                                       fontFamily: 'Sora',
-                                      color: Colors
-                                          .black, // Use your FlutterFlowTheme color here
+                                      color: Color.fromARGB(255, 238, 238, 238), // Set text color to white
                                       fontSize: 32,
                                     ),
                                   ),
@@ -134,27 +135,23 @@ class CompleteDonationPage extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(20, 4, 20, 12),
+                              padding: EdgeInsetsDirectional.fromSTEB(20, 4, 20, 12),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     '**** 0149',
                                     style: TextStyle(
                                       fontFamily: 'Roboto Mono',
-                                      color: Colors
-                                          .black, // Use your FlutterFlowTheme color here
+                                      color: Color.fromARGB(255, 238, 238, 238), // Set text color to white
                                     ),
                                   ),
                                   Text(
                                     '05/25',
                                     style: TextStyle(
                                       fontFamily: 'Roboto Mono',
-                                      color: Colors
-                                          .black, // Use your FlutterFlowTheme color here
+                                      color: Color.fromARGB(255, 238, 238, 238), // Set text color to white
                                     ),
                                   ),
                                 ],
@@ -170,8 +167,8 @@ class CompleteDonationPage extends StatelessWidget {
                       },
                       child: Text('Change Account'),
                       style: ElevatedButton.styleFrom(
-                        iconColor: Colors
-                            .grey[200], // Use your FlutterFlowTheme color here // Use your FlutterFlowTheme color here
+                        primary: Colors.grey[200], // Set button color to match FlutterFlowTheme
+                        onPrimary: Color.fromARGB(255, 238, 238, 238), // Set text color to white
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),
@@ -184,29 +181,29 @@ class CompleteDonationPage extends StatelessWidget {
                         items: [
                           DropdownMenuItem(
                               value: 'internal',
-                              child: Text('Internal Transfer')),
+                              child: Text('Internal Transfer', style: TextStyle(color: Colors.white))),
                           DropdownMenuItem(
                               value: 'external',
-                              child: Text('External Transfer')),
+                              child: Text('External Transfer', style: TextStyle(color: Colors.white))),
                           DropdownMenuItem(
-                              value: 'ach', child: Text('ACH Payment')),
+                              value: 'ach', child: Text('ACH Payment', style: TextStyle(color: Colors.white))),
                         ],
                         onChanged: (val) {},
                         decoration: InputDecoration(
                           hintText: '<Enter Amount>',
+                          hintStyle: TextStyle(color: Colors.white), // Set hint text color to white
                           filled: true,
-                          fillColor: Colors.grey[
-                              200], // Use your FlutterFlowTheme color here
+                          fillColor: Color(0xFF181E1E), // Set background color to match the image
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide(
-                              color: Colors
-                                  .grey, // Use your FlutterFlowTheme color here
+                              color: Colors.white, // Set border color to white
                               width: 2,
                             ),
                           ),
                           contentPadding: EdgeInsets.all(20),
                         ),
+                        dropdownColor: Color(0xFF181E1E), // Set dropdown menu background color to match the image
                       ),
                     ),
                     Padding(
@@ -215,29 +212,29 @@ class CompleteDonationPage extends StatelessWidget {
                         items: [
                           DropdownMenuItem(
                               value: 'internal',
-                              child: Text('Internal Transfer')),
+                              child: Text('Internal Transfer', style: TextStyle(color: Colors.white))),
                           DropdownMenuItem(
                               value: 'external',
-                              child: Text('External Transfer')),
+                              child: Text('External Transfer', style: TextStyle(color: Colors.white))),
                           DropdownMenuItem(
-                              value: 'ach', child: Text('ACH Payment')),
+                              value: 'ach', child: Text('ACH Payment', style: TextStyle(color: Colors.white))),
                         ],
                         onChanged: (val) {},
                         decoration: InputDecoration(
-                          hintText: 'Charity: Red cross',
+                          hintText: 'Charity: Red Cross',
+                          hintStyle: TextStyle(color: Colors.white), // Set hint text color to white
                           filled: true,
-                          fillColor: Colors.grey[
-                              200], // Use your FlutterFlowTheme color here
+                          fillColor: Color(0xFF181E1E), // Set background color to match the image
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide(
-                              color: Colors
-                                  .grey, // Use your FlutterFlowTheme color here
+                              color: Colors.white, // Set border color to white
                               width: 2,
                             ),
                           ),
                           contentPadding: EdgeInsets.all(20),
                         ),
+                        dropdownColor: Color(0xFF181E1E), // Set dropdown menu background color to match the image
                       ),
                     ),
                     Padding(
@@ -251,13 +248,15 @@ class CompleteDonationPage extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Inter',
                               fontSize: 16,
+                              color: Color.fromARGB(255, 238, 238, 238)
                             ),
                           ),
                           Text(
-                            '\$7,630',
+                            '3.23 Eth',
                             style: TextStyle(
                               fontFamily: 'Sora',
                               fontSize: 20,
+                              color: Color.fromARGB(255, 238, 238, 238),
                             ),
                           ),
                         ],
@@ -269,8 +268,8 @@ class CompleteDonationPage extends StatelessWidget {
                       },
                       child: Text('Ok'),
                       style: ElevatedButton.styleFrom(
-                        iconColor:
-                            Colors.blue, // Use your FlutterFlowTheme color here
+                        primary: Colors.blue, // Use your FlutterFlowTheme color here
+                        onPrimary: Colors.white, // Set text color to white
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),
