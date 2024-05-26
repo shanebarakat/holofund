@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 import 'red_cross_page.dart';
 
 class CharitiesPage extends StatelessWidget {
-  static const routeName = '/charities';
+  static const routeName = '/charities]]';
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Charities'),
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    backgroundColor: Color(0xFF181E1E),
+    appBar: AppBar(
+      title: Text(
+        'Back',
+        style: TextStyle(color: Color.fromARGB(255, 238, 238, 238)),
       ),
+      backgroundColor: Color(0xFF181E1E),
+      iconTheme: IconThemeData(color: Color.fromARGB(255, 238, 238, 238)), // Set the icon color here
+    ),
       body: Align(
         alignment: AlignmentDirectional(0, 0),
         child: Column(
@@ -27,6 +33,7 @@ class CharitiesPage extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Inter',
                       fontSize: 40,
+                      color: Color.fromARGB(255, 238, 238, 238),
                     ),
                   ),
                 ],
@@ -39,11 +46,12 @@ class CharitiesPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Account: \$23,000',
+                    'Account: 4.23 Eth',
                     style: TextStyle(
                       fontFamily: 'Lexend',
                       fontSize: 36,
                       fontWeight: FontWeight.w300,
+                      color: Color.fromARGB(255, 238, 238, 238),
                     ),
                   ),
                 ],
@@ -80,6 +88,7 @@ class CharitiesPage extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Sora',
                             fontSize: 24,
+                            color: Color.fromARGB(255, 238, 238, 238),
                           ),
                         ),
                         Row(
@@ -90,18 +99,19 @@ class CharitiesPage extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                               child: Text(
-                                '\$7,302',
+                                '73.23 Eth',
                                 style: TextStyle(
                                   fontFamily: 'Sora',
                                   fontSize: 32,
+                                  color: Color.fromARGB(255, 238, 238, 238),
                                 ),
                               ),
                             ),
                             Text(
-                              'Credibility: 90%',
+                              'Credibility: 94%',
                               style: TextStyle(
-                                fontFamily: 'Inter',
-                                color: Color(0x7DEEEEEE),
+                                fontFamily: 'Sora',
+                                color: Color.fromARGB(255, 238, 238, 238),
                                 fontSize: 16,
                               ),
                             ),
@@ -137,6 +147,7 @@ class CharitiesPage extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'Sora',
                           fontSize: 24,
+                          color: Color.fromARGB(255, 238, 238, 238),
                         ),
                       ),
                       Row(
@@ -146,18 +157,19 @@ class CharitiesPage extends StatelessWidget {
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                             child: Text(
-                              '\$7,302',
+                              '9.86 Eth',
                               style: TextStyle(
                                 fontFamily: 'Sora',
                                 fontSize: 32,
+                                color: Color.fromARGB(255, 238, 238, 238),
                               ),
                             ),
                           ),
                           Text(
                             'Credibility: 90%',
                             style: TextStyle(
-                              fontFamily: 'Inter',
-                              color: Color(0x7DEEEEEE),
+                              fontFamily: 'Sora',
+                              color: Color.fromARGB(255, 238, 238, 238),
                               fontSize: 16,
                             ),
                           ),
@@ -192,6 +204,7 @@ class CharitiesPage extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'Sora',
                           fontSize: 24,
+                          color: Color.fromARGB(255, 238, 238, 238),
                         ),
                       ),
                       Row(
@@ -201,18 +214,19 @@ class CharitiesPage extends StatelessWidget {
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                             child: Text(
-                              '\$7,302',
+                              '38.2 Eth',
                               style: TextStyle(
                                 fontFamily: 'Sora',
                                 fontSize: 32,
+                                color: Color.fromARGB(255, 238, 238, 238),
                               ),
                             ),
                           ),
                           Text(
-                            'Credibility: 90%',
+                            'Credibility: 79%',
                             style: TextStyle(
                               fontFamily: 'Inter',
-                              color: Color(0x7DEEEEEE),
+                              color: Color.fromARGB(255, 238, 238, 238),
                               fontSize: 16,
                             ),
                           ),
@@ -253,6 +267,7 @@ class CharitiesPage extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Sora',
                             fontSize: 24,
+                            color: Color.fromARGB(255, 238, 238, 238),
                           ),
                         ),
                         Row(
@@ -263,18 +278,19 @@ class CharitiesPage extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                               child: Text(
-                                '\$7,302',
+                                '7.90 Eth',
                                 style: TextStyle(
                                   fontFamily: 'Sora',
                                   fontSize: 32,
+                                  color: Color.fromARGB(255, 238, 238, 238),
                                 ),
                               ),
                             ),
                             Text(
-                              'Credibility: 90%',
+                              'Credibility: 82%',
                               style: TextStyle(
                                 fontFamily: 'Inter',
-                                color: Color(0x7DEEEEEE),
+                                color: Color.fromARGB(255, 238, 238, 238),
                                 fontSize: 16,
                               ),
                             ),
@@ -292,3 +308,4 @@ class CharitiesPage extends StatelessWidget {
     );
   }
 }
+
