@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'complete_donation_page.dart';
 
+
 class RedCrossPage extends StatelessWidget {
   static const routeName = '/redcross';
 
@@ -9,8 +10,13 @@ class RedCrossPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Red Cross'),
+        backgroundColor: Colors.black
+
       ),
-      body: Column(
+      backgroundColor: Colors.black, // Set the background color to black
+
+      body: 
+      Column(
         mainAxisSize: MainAxisSize.max,
         children: [
           Flexible(
@@ -43,374 +49,10 @@ class RedCrossPage extends StatelessWidget {
                       children: [
                         Text(
                           'Red Cross',
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          
                           style: TextStyle(
                             fontFamily: 'Sora',
                             fontSize: 40,
+                            color: Colors.white
                           ),
                         ),
                         Row(
@@ -425,6 +67,7 @@ class RedCrossPage extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Sora',
                                   fontSize: 25,
+                                  color: Colors.white
                                 ),
                               ),
                             ),
@@ -433,7 +76,8 @@ class RedCrossPage extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Inter',
                                 color: Color(0x7DEEEEEE),
-                                fontSize: 16,
+                                fontSize: 20,
+    
                               ),
                             ),
                           ],
@@ -450,6 +94,7 @@ class RedCrossPage extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Sora',
                                   fontSize: 25,
+                                  color: Colors.white
                                 ),
                               ),
                             ),
@@ -458,7 +103,7 @@ class RedCrossPage extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Inter',
                                 color: Color(0x7DEEEEEE),
-                                fontSize: 16,
+                                fontSize: 20,
                               ),
                             ),
                           ],
@@ -499,17 +144,18 @@ class RedCrossPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Credibility Score',
+                        '          Credibility Score',
                         style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 21,
+                          fontSize: 24,
+                          color: Colors.white
                         ),
                       ),
                       Text(
-                        'Rating',
+                        '',
                         style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 21,
+                          fontSize: 22,
                         ),
                       ),
                     ],
@@ -522,7 +168,7 @@ class RedCrossPage extends StatelessWidget {
             padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
             child: Container(
               width: double.infinity,
-              height: 100,
+              height: 80,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF4B39EF), Colors.blue],
@@ -539,10 +185,11 @@ class RedCrossPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Disaster relief funds',
+                      '        Disaster relief funds',
                       style: TextStyle(
                         fontFamily: 'Sora',
-                        fontSize: 28,
+                        fontSize: 25,
+                        color: Colors.white
                       ),
                     ),
                   ],
@@ -555,7 +202,7 @@ class RedCrossPage extends StatelessWidget {
             child: Container(
               
               width: double.infinity,
-              height: 100,
+              height: 80,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF4B39EF), Colors.blue],
@@ -580,10 +227,11 @@ class RedCrossPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Donate now',
+                        '              Donate now',
                         style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 28,
+                          fontSize: 24,
+                          color: Colors.white
                         ),
                       ),
                     ],
@@ -596,7 +244,7 @@ class RedCrossPage extends StatelessWidget {
             padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
             child: Container(
               width: double.infinity,
-              height: 100,
+              height: 80,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0xFF4B39EF), Colors.blue],
@@ -613,10 +261,11 @@ class RedCrossPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'My donation list',
+                      '           My donation list',
                       style: TextStyle(
                         fontFamily: 'Sora',
-                        fontSize: 29,
+                        fontSize: 24,
+                        color: Colors.white
                       ),
                     ),
                   ],
@@ -636,12 +285,12 @@ class RedCrossPage extends StatelessWidget {
               },
               child: Container(
                 width: double.infinity,
-                height: 100,
+                height: 80,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Colors.orange, // Replace with FlutterFlowTheme tertiary
-                      Color(0xFFEE8B60)
+                      Colors.blue, // Replace with FlutterFlowTheme tertiary
+                      Color(0xFF4B39EF)
                     ],
                     stops: [0, 1],
                     begin: AlignmentDirectional(1, -1),
@@ -656,10 +305,11 @@ class RedCrossPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Credibility breakdown',
+                        '         Credibility breakdown',
                         style: TextStyle(
                           fontFamily: 'Sora',
-                          fontSize: 27,
+                          fontSize: 24,
+                          color: Colors.white
                         ),
                       ),
                     ],
