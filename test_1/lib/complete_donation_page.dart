@@ -67,16 +67,6 @@ class CompleteDonationPage extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.close_rounded,
-                              color: Color.fromARGB(255, 238, 238, 238), // Set the icon color to white
-                              size: 25,
-                            ),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
                         ),
                       ],
                     ),
@@ -167,8 +157,8 @@ class CompleteDonationPage extends StatelessWidget {
                       },
                       child: Text('Change Account'),
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[200], // Set button color to match FlutterFlowTheme
-                        onPrimary: Color.fromARGB(255, 238, 238, 238), // Set text color to white
+                        iconColor: Colors.grey[200], // Set button color to match FlutterFlowTheme
+                  
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),
@@ -268,8 +258,7 @@ class CompleteDonationPage extends StatelessWidget {
                       },
                       child: Text('Ok'),
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.blue, // Use your FlutterFlowTheme color here
-                        onPrimary: Colors.white, // Set text color to white
+                        iconColor: Colors.blue, // Use your FlutterFlowTheme color here
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),

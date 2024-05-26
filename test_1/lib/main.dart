@@ -78,14 +78,6 @@ class MyHomePage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              Text(
-                                'Your account Details are below...',
-                                style: TextStyle(
-                                  fontFamily: 'Sora',
-                                  fontSize: 20,
-                                  color: const Color.fromARGB(255, 255, 255, 255),
-                                ),
-                              ),
                             ],
                           ),
                         ),

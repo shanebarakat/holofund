@@ -9,7 +9,7 @@ class RedCrossPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Red Cross'),
+        title: Text('Back'),
         backgroundColor: Colors.black
 
       ),
@@ -25,12 +25,13 @@ class RedCrossPage extends StatelessWidget {
               padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
               child: Container(
                 width: double.infinity,
-                height: 200,
+                height: 210,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
+                      Colors.black,
                       Colors.red, // Replace with FlutterFlowTheme errorRed
-                      Colors.blue // Replace with FlutterFlowTheme primary
+                     // Replace with FlutterFlowTheme primary
                     ],
                     stops: [0, 1],
                     begin: AlignmentDirectional(1, -1),
@@ -42,7 +43,7 @@ class RedCrossPage extends StatelessWidget {
                 child: Align(
                   alignment: AlignmentDirectional(0, 0),
                   child: Padding(
-                    padding: EdgeInsets.all(12),
+                    padding: EdgeInsets.all(11),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -185,7 +186,7 @@ class RedCrossPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '        Disaster relief funds',
+                      '      Disaster relief funds',
                       style: TextStyle(
                         fontFamily: 'Sora',
                         fontSize: 25,
@@ -261,7 +262,7 @@ class RedCrossPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '           My donation list',
+                      '          Donation History',
                       style: TextStyle(
                         fontFamily: 'Sora',
                         fontSize: 24,
@@ -289,8 +290,8 @@ class RedCrossPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Colors.blue, // Replace with FlutterFlowTheme tertiary
-                      Color(0xFF4B39EF)
+                       // Replace with FlutterFlowTheme tertiary
+                      Color(0xFF4B39EF), Colors.blue
                     ],
                     stops: [0, 1],
                     begin: AlignmentDirectional(1, -1),
@@ -305,7 +306,7 @@ class RedCrossPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '         Credibility breakdown',
+                        '      Credibility Breakdown',
                         style: TextStyle(
                           fontFamily: 'Sora',
                           fontSize: 24,
