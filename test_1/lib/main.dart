@@ -29,6 +29,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF181E1E),
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -36,7 +37,7 @@ class MyHomePage extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                color: Colors.black, // Use your FlutterFlowTheme color here
+                color: Color(0xFF181E1E),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
@@ -61,19 +62,17 @@ class MyHomePage extends StatelessWidget {
                                     style: TextStyle(
                                       fontFamily: 'Sora',
                                       color: Colors.red,
-                                      fontSize: 24,
+                                      fontSize: 36,
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        4, 0, 0, 0),
+                                    padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
                                     child: Text(
-                                      'Jaay',
+                                      ' Jaay',
                                       style: TextStyle(
                                         fontFamily: 'Sora',
-                                        color: Colors
-                                            .blue, // Use your FlutterFlowTheme color here
-                                        fontSize: 24,
+                                        color: Colors.white,
+                                        fontSize: 36,
                                       ),
                                     ),
                                   ),
@@ -82,8 +81,9 @@ class MyHomePage extends StatelessWidget {
                               Text(
                                 'Your account Details are below...',
                                 style: TextStyle(
-                                  fontFamily: 'Inter',
-                                  fontSize: 16,
+                                  fontFamily: 'Sora',
+                                  fontSize: 20,
+                                  color: const Color.fromARGB(255, 255, 255, 255),
                                 ),
                               ),
                             ],
@@ -98,10 +98,11 @@ class MyHomePage extends StatelessWidget {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Text(
-                          'Total Balance',
+                          '  Total Balance:',
                           style: TextStyle(
-                            fontFamily: 'Inter',
-                            fontSize: 16,
+                            fontFamily: 'Sora',
+                            fontSize: 18,
+                            color: const Color.fromARGB(255, 255, 255, 255),
                           ),
                         ),
                       ],
@@ -113,10 +114,11 @@ class MyHomePage extends StatelessWidget {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Text(
-                          '\$25,202',
+                          '  4.23 Eth',
                           style: TextStyle(
                             fontFamily: 'Sora',
-                            fontSize: 32,
+                            fontSize: 26,
+                            color: const Color.fromARGB(255, 255, 255, 255),
                           ),
                         ),
                       ],
@@ -128,11 +130,10 @@ class MyHomePage extends StatelessWidget {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Container(
-                          width: 180,
+                          width: 160,
                           height: 40,
                           decoration: BoxDecoration(
-                            color: Colors.grey[
-                                200], // Use your FlutterFlowTheme color here
+                            color: Color(0xFF181E1E),
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4,
@@ -150,14 +151,13 @@ class MyHomePage extends StatelessWidget {
                               child: Text(
                                 'Credit',
                                 style: TextStyle(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Sora',
                                   color: Colors.white,
                                   fontSize: 16,
                                 ),
                               ),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors
-                                    .blue, // Use your FlutterFlowTheme color here
+                                backgroundColor: Colors.blue,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(8),
                                 ),
@@ -168,11 +168,10 @@ class MyHomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 8),
                         Container(
-                          width: 180,
+                          width: 160,
                           height: 40,
                           decoration: BoxDecoration(
-                            color: Colors.grey[
-                                200], // Use your FlutterFlowTheme color here
+                            color: Color(0xFF181E1E),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(4),
@@ -183,14 +182,13 @@ class MyHomePage extends StatelessWidget {
                               child: Text(
                                 'Debit',
                                 style: TextStyle(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Sora',
                                   color: Colors.white,
                                   fontSize: 16,
                                 ),
                               ),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors
-                                    .orange, // Use your FlutterFlowTheme color here
+                                backgroundColor: Colors.blue,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(8),
                                 ),
@@ -209,24 +207,23 @@ class MyHomePage extends StatelessWidget {
               width: 357,
               height: 400,
               decoration: BoxDecoration(
-                color: Colors.grey[200], // Use your FlutterFlowTheme color here
+                color: Color(0xFF181E1E),
               ),
               child: Center(
-                child: Text(
-                  'News Channel',
-                  style: TextStyle(
-                    fontFamily: 'Inter',
-                    fontSize: 16,
-                  ),
+                child: Image.asset(
+                  'assets/images/block_logo.png', // Replace with your image path
+                  fit: BoxFit.cover,
+                  width: 300,
+                  height: 400,
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.92,
                 decoration: BoxDecoration(
-                  color: Colors.black, // Use your FlutterFlowTheme color here
+                  color: Colors.black,
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 5,
@@ -253,8 +250,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor:
-                      Colors.blue, // Use your FlutterFlowTheme color here
+                  backgroundColor: Colors.blue,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
